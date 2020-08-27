@@ -1,12 +1,8 @@
 <template>
   <div id="app">
     <b-container class="col-md-3">
-      <div>
-        <ProductForm />
-      </div>
-      <div
-        class="qtd-produtos-container"
-      >Quantidade de produtos: {{this.$store.state.products.length}}</div>
+      <div><ProductForm /></div>
+      <div class="qtd-produtos-container">Quantidade de produtos: {{this.$store.state.products.length}}</div>
       <div class>
         <router-link to="products">listagem de produtos</router-link>
       </div>
@@ -16,6 +12,7 @@
 
 <script>
 import ProductForm from "./ProductForm";
+
 
 export default {
   name: "productApp",

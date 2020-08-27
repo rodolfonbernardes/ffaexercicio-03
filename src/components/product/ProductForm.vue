@@ -61,7 +61,7 @@ export default {
         qtde: this.product.qtde,
         value: this.product.value,
       };
-      this.storeProduct(newProduct);
+      this.$store.dispatch("storeProduct", newProduct);
       this.cleanForm();
     },
     cleanForm() {
